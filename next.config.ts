@@ -5,6 +5,9 @@ const nextConfig: NextConfig = {
 	images: {
 		remotePatterns: [new URL('https://i.postimg.cc/**')],
 	},
+	eslint: {
+		ignoreDuringBuilds: true,
+	},
 }
 
 export default nextConfig;

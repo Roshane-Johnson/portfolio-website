@@ -3,10 +3,10 @@
 import { Marquee, MarqueeContent, MarqueeFade, MarqueeItem } from '@/components/ui/marquee'
 import { useState } from 'react'
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
+import Image from 'next/image'
 
-type Props = {}
-const Companies: React.FC<Props> = () => {
-	const [companyImages, setCompanyImages] = useState([
+const Companies: React.FC = () => {
+	const [companyImages, _] = useState([
 		{ src: '/JPS_logo.png', altText: 'Jamaica Public Service' },
 		{ src: '/PA_logo.gif', altText: 'Palace Amusement Ltd.' },
 		{ src: '/thinknchange_logo.png', altText: "ThnkN'Change" },
@@ -31,10 +31,10 @@ const Companies: React.FC<Props> = () => {
 					<MarqueeFade side="right" className="md:from-[#150d26]  from-transparent" />
 					<MarqueeContent className="transition-all">
 						{companyImages.map((image, index) => (
-							<Tooltip>
+							<Tooltip key={index}>
 								<TooltipTrigger asChild>
 									<MarqueeItem className=" grayscale hover:grayscale-0 h-20 w-20 flex items-center justify-center" key={index}>
-										<img src={image.src} alt={image.altText} className="overflow-hidden" />
+										<Image src={image.src} alt={image.altText} className="overflow-hidden" />
 									</MarqueeItem>
 								</TooltipTrigger>
 								<TooltipContent>

@@ -1,9 +1,9 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
-import { motion, AnimatePresence, easeInOut } from 'framer-motion'
-import { Menu, X, ArrowRight, Zap, Search } from 'lucide-react'
+import { AnimatePresence, easeInOut, motion } from 'framer-motion'
+import { ArrowRight, Menu, X, Zap } from 'lucide-react'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 interface NavItem {
 	name: string
@@ -98,7 +98,7 @@ export default function Navbar() {
 						</motion.div>
 
 						<nav className="hidden items-center space-x-1 lg:flex">
-							{navItems.map((item, index) => (
+							{navItems.map((item) => (
 								<motion.div key={item.name} variants={itemVariants} className="relative" onMouseEnter={() => setHoveredItem(item.name)} onMouseLeave={() => setHoveredItem(null)}>
 									<Link
 										prefetch={false}
@@ -165,7 +165,7 @@ export default function Navbar() {
 							exit="closed">
 							<div className="space-y-6 p-6">
 								<div className="space-y-1">
-									{navItems.map((item, idx) => (
+									{navItems.map((item) => (
 										<motion.div key={item.name} variants={mobileItemVariants}>
 											<Link
 												prefetch={false}
@@ -177,8 +177,8 @@ export default function Navbar() {
 										</motion.div>
 									))}
 								</div>
-								// Second Level
 								{/* <motion.div className="border-border space-y-3 border-t pt-6" variants={mobileItemVariants}>
+								// Second Level
 									<Link
 										prefetch={false}
 										href="#!"

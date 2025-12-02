@@ -3,13 +3,12 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
+import { Badge } from '../ui/badge'
 import Earth from '../ui/Earth'
 import TextRotate from '../ui/text-rotate'
-import { Badge } from '../ui/badge'
+import Image from 'next/image'
 
-interface Props {}
-
-const Hero: React.FC<Props> = (Props) => {
+const Hero: React.FC = () => {
 	return (
 		<section className="relative w-full overflow-hidden bg-transparent pt-32 pb-10 font-light antialiased md:pt-20 md:pb-16">
 			<div
@@ -69,7 +68,7 @@ const Hero: React.FC<Props> = (Props) => {
 				<motion.div className="relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}>
 					<Earth baseColor={[0.608, 0.529, 0.961]} markerColor={[0.608, 0.529, 0.961]} glowColor={[0.608, 0.529, 0.961]} />
 					<div className="w-[90vw] absolute top-[35%] left-1/2 -translate-x-1/2 z-10 mx-auto overflow-hidden rounded-lg shadow-[0_0_50px_rgba(155,135,245,0.2)] mt-4">
-						<img src="hero.png" alt="Lunexa Dashboard" width={1920} height={1080} className="h-full w-full rounded-lg border border-white/10" />
+						<Image src="hero.png" alt="Lunexa Dashboard" width={1920} height={1080} className="h-full w-full rounded-lg border border-white/10" />
 					</div>
 				</motion.div>
 			</div>

@@ -113,7 +113,7 @@ export default function HowItWorks() {
 
 								<div className="mt-10 rounded-xl bg-white/10 p-6 backdrop-blur">
 									<p className="text-lg font-medium">
-										&quot;Honestly, I've worked with many developers. What set you apart was your process. The constant communication, clear milestones, and focus on the why behind the
+										&quot;Honestly, I&apos;ve worked with many developers. What set you apart was your process. The constant communication, clear milestones, and focus on the why behind the
 										features prevented costly missteps. You delivered on time and on budget, which is rare.&quot;
 									</p>
 									<p className="mt-3 font-medium text-white/70">— Andrew, CEO, Local Construction Company</p>

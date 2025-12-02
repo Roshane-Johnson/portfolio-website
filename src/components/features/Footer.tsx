@@ -1,11 +1,9 @@
 'use client'
-import { useEffect, useState } from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { useTheme } from 'next-themes'
 import { Input } from '@/components/ui/input'
-import { Github, Linkedin, Twitter, Moon, Sun, ArrowDownLeft, MessageCircle } from 'lucide-react'
+import { ArrowDownLeft, Github, Linkedin, Twitter } from 'lucide-react'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 const data = () => ({
 	navigation: {
@@ -27,7 +25,6 @@ const data = () => ({
 })
 
 export default function Footer() {
-	const { theme, setTheme } = useTheme()
 	const [mounted, setMounted] = useState(false)
 
 	useEffect(() => {

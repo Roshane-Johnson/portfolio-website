@@ -1,12 +1,12 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
-import { JSX, useRef } from 'react'
-import { useTheme } from 'next-themes'
 import { cn } from '@/lib/utils'
-import { Users, Award, Briefcase, Code, Sparkles, Building, LineChart, CheckCircle, Clock, Zap, DollarSign } from 'lucide-react'
-import NumberTicker from '../ui/number-ticker'
+import { motion, useInView } from 'framer-motion'
+import { Building, CheckCircle, Clock, DollarSign, LineChart, Sparkles, Zap } from 'lucide-react'
+import { useTheme } from 'next-themes'
+import { JSX, useRef } from 'react'
 import { Badge } from '../ui/badge'
+import NumberTicker from '../ui/number-ticker'
 
 interface StatItemProps {
 	value: number

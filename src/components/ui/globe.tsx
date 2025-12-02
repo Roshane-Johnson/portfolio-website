@@ -1,8 +1,8 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
-import createGlobe from 'cobe';
 import { cn } from '@/lib/utils';
+import createGlobe from 'cobe'
+import React, { useEffect, useRef } from 'react'
 
 interface EarthProps {
   className?: string;
