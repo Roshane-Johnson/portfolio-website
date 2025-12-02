@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google'
+import { Geist_Mono, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 
 const geistSans = Plus_Jakarta_Sans({
@@ -29,8 +29,8 @@ export default function RootLayout({
 	children: React.ReactNode
 }>) {
 	return (
-		<html lang="en" style={{ background: '#0e081a' }}>
-			<body className={` ${geistMono.variable} ${playfairDisplay.variable} ${geistSans.variable}antialiased`}>{children}</body>
+		<html lang="en" className="bg-[#0a0613] dark">
+			<body className={` ${geistMono.variable} ${playfairDisplay.variable} ${geistSans.variable} antialiased`}>{children}</body>
 		</html>
 	)
 }

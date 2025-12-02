@@ -1,7 +1,11 @@
-import CompaniesContributedTowards from '@/components/mvpblocks/companies-contributed-towards'
-import Services from '@/components/mvpblocks/services'
-import Hero from '../components/ui/Hero'
-import Navbar from '../components/ui/Navbar'
+import Hero from '@/components/features/Hero'
+import Navbar from '@/components/features/Navbar'
+import Services from '@/components/features/Services'
+import Companies from '@/components/features/Companies'
+import AboutMe from '@/components/features/AboutMe'
+import Contact from '@/components/features/Contact'
+import HowItWorks from '@/components/features/HowItWorks'
+import Footer from '@/components/features/Footer'
 
 export default function Home() {
 	return (
@@ -13,7 +17,11 @@ export default function Home() {
 			<Navbar />
 			<Hero />
 			<Services />
-			<CompaniesContributedTowards />
+			<Companies />
+			<AboutMe />
+			<HowItWorks />
+			<Contact />
+			<Footer />
 		</div>
 	)
 }

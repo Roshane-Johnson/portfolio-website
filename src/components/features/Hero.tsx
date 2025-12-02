@@ -3,14 +3,15 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import React from 'react'
-import TextRotate from '../fancy/text/text-rotate'
-import Earth from './Earth'
+import Earth from '../ui/Earth'
+import TextRotate from '../ui/text-rotate'
+import { Badge } from '../ui/badge'
 
 interface Props {}
 
 const Hero: React.FC<Props> = (Props) => {
 	return (
-		<section className="re	lative w-full overflow-hidden bg-transparent pt-32 pb-10 font-light text-white antialiased md:pt-20 md:pb-16">
+		<section className="relative w-full overflow-hidden bg-transparent pt-32 pb-10 font-light antialiased md:pt-20 md:pb-16">
 			<div
 				className="absolute top-0 right-0 h-1/2 w-1/2"
 				style={{
@@ -26,13 +27,15 @@ const Hero: React.FC<Props> = (Props) => {
 
 			<div className="relative z-10 container mx-auto max-w-2xl px-4 pt-7 text-center md:max-w-4xl md:px-6 lg:max-w-7xl">
 				<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeOut' }}>
-					<span className="mb-6 inline-block rounded-full border border-[#9b87f5]/30 px-3 py-1 font-normal text-xs text-[#9b87f5]">REBUILDING JAMAICA STRONGER AFTER STORM MELISSA</span>
-					<h1 className="mx-auto mb-6 max-w-4xl text-4xl font-light md:text-[3.7rem]">
+					<Badge variant="outline" className=" border-[#9b87f5]/30 bg-[#9b87f5]/5 rounded-full px-4 py-1 text-xs mb-6 text-[#9b87f5] tracking-wide">
+						REBUILDING JAMAICA STRONGER AFTER STORM MELISSA
+					</Badge>
+					<h1 className="mx-auto mb-6 max-w-4xl text-4xl font-light md:text-[3.7rem] tracking-tight">
 						Get Online with
 						<span>
 							<TextRotate
 								texts={['Stunning ✽', 'AI-Powered', 'High Quality']}
-								mainClassName="flex justify-center md:inline-flex text-center text-[#9b87f5] mx-3 w-[350px] "
+								mainClassName="flex justify-center md:inline-flex text-center text-[#9b87f5] mx-auto w-[350px] tracking-tight"
 								staggerFrom={'last'}
 								initial={{ y: '100%' }}
 								animate={{ y: 0 }}
@@ -51,7 +54,7 @@ const Hero: React.FC<Props> = (Props) => {
 					<div className="mb-10 flex flex-col items-center justify-center gap-4 sm:mb-0 sm:flex-row">
 						<Link
 							prefetch={false}
-							href="/docs/get-started"
+							href="#!"
 							className="text-sm neumorphic-button hover:shadow-[0_0_20px_rgba(155, 135, 245, 0.5)] relative w-full overflow-hidden rounded-full border border-white/10 bg-gradient-to-b from-white/10 to-white/5 px-8 py-4 text-white shadow-lg transition-all duration-300 hover:border-[#9b87f5]/30 sm:w-auto">
 							Get My Business Online
 						</Link>
