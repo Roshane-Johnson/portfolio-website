@@ -40,7 +40,7 @@ export default function Footer() {
 
 	return (
 		<footer className="mt-20 max-w-7xl mx-auto">
-			<div className="animate-energy-flow via-primary h-px w-full bg-gradient-to-r from-transparent to-transparent" />
+			<div className="animate-energy-flow via-primary h-px w-full bg-linear-to-r from-transparent to-transparent" />
 			<div className="relative w-full px-5">
 				{/* Top Section */}
 				<div className="container m-auto grid grid-cols-1 gap-12 py-12 md:grid-cols-2 lg:grid-cols-5">
@@ -78,7 +78,7 @@ export default function Footer() {
 							</div>
 							<p className="text-muted-foreground text-xs">Get the latest updates, tutorials, and exclusive offers.</p>
 						</form>
-						<h1 className="from-muted-foreground/15 bg-gradient-to-b bg-clip-text text-5xl font-extrabold text-transparent lg:text-7xl">Roshane.</h1>
+						<h1 className="from-muted-foreground/15 bg-linear-to-b bg-clip-text text-5xl font-extrabold text-transparent lg:text-7xl">Roshane.</h1>
 					</div>
 
 					{/* Navigation Links */}
@@ -104,7 +104,7 @@ export default function Footer() {
 				</div>
 
 				{/* Bottom Section */}
-				<div className="animate-rotate-3d via-primary h-px w-full bg-gradient-to-r from-transparent to-transparent" />
+				<div className="animate-rotate-3d via-primary h-px w-full bg-linear-to-r from-transparent to-transparent" />
 				<div className="text-muted-foreground container m-auto flex flex-col items-center justify-between gap-4 p-4 text-xs md:flex-row md:px-0 md:text-sm">
 					<p className="">&copy; {currentYear} Roshane. | All rights reserved</p>
 					<div className="flex items-center gap-4">

@@ -85,7 +85,7 @@ export default function Navbar() {
 						<motion.div className="flex items-center space-x-3" variants={itemVariants} whileHover={{ scale: 1.02 }} transition={{ type: 'spring', stiffness: 400, damping: 25 }}>
 							<Link prefetch={false} href="/" className="flex items-center space-x-3">
 								<div className="relative">
-									<div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-[#9b87f5] via-[#bfb0ff] to-[#9b87f5] shadow-lg">
+									<div className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-bg from-[#9b87f5] via-[#bfb0ff] to-[#9b87f5] shadow-lg">
 										<Zap className="h-5 w-5 text-white" />
 									</div>
 									<div className="absolute -top-1 -right-1 h-3 w-3 animate-pulse rounded-full bg-green-400"></div>

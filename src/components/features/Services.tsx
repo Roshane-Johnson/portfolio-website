@@ -78,7 +78,7 @@ export default function Services() {
 										<ArrowRight className="size-4 transition-all duration-500 group-hover:translate-x-2" />
 									</div>
 								</div>
-								<div className="from-[#9b87f5] to-[#9b87f5]/30 absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r blur-2xl transition-all duration-500 group-hover:blur-lg" />
+								<div className="from-[#9b87f5] to-[#9b87f5]/30 absolute bottom-0 left-0 h-1 w-full bg-linear-to-r blur-2xl transition-all duration-500 group-hover:blur-lg" />
 							</motion.div>
 						))}
 					</ul>

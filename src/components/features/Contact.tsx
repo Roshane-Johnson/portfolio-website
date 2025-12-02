@@ -60,7 +60,7 @@ export default function Contact() {
 								animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
 								transition={{ duration: 0.5, delay: 0.1 }}
 								className="flex w-full gap-2">
-								<h2 className="from-foreground to-foreground/80 mb-2 bg-gradient-to-r bg-clip-text text-4xl font-bold tracking-tight text-transparent md:text-5xl">Contact</h2>
+								<h2 className="from-foreground to-foreground/80 mb-2 bg-linear-to-r bg-clip-text text-4xl font-bold tracking-tight text-transparent md:text-5xl">Contact</h2>
 								<span className="text-primary relative z-10 w-full text-4xl font-bold tracking-tight italic md:text-5xl">Me</span>
 								<SparklesCore
 									id="tsparticles"
@@ -100,7 +100,7 @@ export default function Contact() {
 									<Button
 										type="submit"
 										disabled={isSubmitting}
-										className="w-full bg-gradient-to-b from-purple-500 to-purple-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]">
+										className="w-full bg-linear-to-b from-purple-500 to-purple-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]">
 										{isSubmitting ? (
 											<span className="flex items-center justify-center">
 												<Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -125,7 +125,7 @@ export default function Contact() {
 							transition={{ duration: 0.5, delay: 0.5 }}
 							className="relative my-8 flex items-center justify-center overflow-hidden pr-8">
 							<div className="flex flex-col items-center justify-center overflow-hidden">
-								<article className="relative mx-auto h-[350px] min-h-60 max-w-[450px] overflow-hidden rounded-3xl border bg-gradient-to-b from-[#9b87f5] to-[#9b87f5]/5 p-6 text-3xl tracking-tight text-white md:h-[450px] md:min-h-80 md:p-8 md:text-4xl md:leading-[1.05] lg:text-5xl">
+								<article className="relative mx-auto h-[350px] min-h-60 max-w-[450px] overflow-hidden rounded-3xl border bg-linear-to-b from-[#9b87f5] to-[#9b87f5]/5 p-6 text-3xl tracking-tight text-white md:h-[450px] md:min-h-80 md:p-8 md:text-4xl md:leading-[1.05] lg:text-5xl">
 									Building Winning Brands Globally From Jamaica.
 									<div className="absolute -right-20 -bottom-20 z-10 mx-auto flex h-full w-full max-w-[300px] items-center justify-center transition-all duration-700 hover:scale-105 md:-right-28 md:-bottom-28 md:max-w-[550px]">
 										<Earth scale={1.1} baseColor={[0.608, 0.529, 0.961]} markerColor={[0.608, 0.529, 0.961]} glowColor={[0.608, 0.529, 0.961]} />

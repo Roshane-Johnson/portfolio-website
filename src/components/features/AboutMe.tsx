@@ -30,11 +30,11 @@ const StatItem = ({ value, label, icon, delay = 0, decimalPlaces = 0, color = 'f
 			initial={{ opacity: 0, y: 20 }}
 			animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
 			transition={{ duration: 0.6, delay: delay, ease: 'easeOut' }}
-			className={cn('group border-border/30 bg-card relative overflow-hidden rounded-xl border p-6', resolvedTheme === 'dark' ? 'shadow-xl shadow-black/5' : 'shadow-lg shadow-black/[0.03]')}>
-			<div className={cn('absolute -top-6 -right-6 h-24 w-24 rounded-full bg-gradient-to-br opacity-20 blur-2xl transition-all duration-500 group-hover:opacity-30 group-hover:blur-3xl', color)} />
+			className={cn('group border-border/30 bg-card relative overflow-hidden rounded-xl border p-6', resolvedTheme === 'dark' ? 'shadow-xl shadow-black/5' : 'shadow-lg shadow-black/3')}>
+			<div className={cn('absolute -top-6 -right-6 h-24 w-24 rounded-full bg-linear-to-bg opacity-20 blur-2xl transition-all duration-500 group-hover:opacity-30 group-hover:blur-3xl', color)} />
 
 			<div className="flex items-center gap-4">
-				<div className={cn('flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br text-white', color)}>{icon}</div>
+				<div className={cn('flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-linear-to-bg text-white', color)}>{icon}</div>
 
 				<div className="flex flex-col">
 					<h3 className="flex items-baseline text-3xl font-bold tracking-tight">
@@ -165,7 +165,7 @@ export default function AboutMe() {
 							animate={aboutInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
 							transition={{ duration: 0.7, delay: 0.1, ease: 'easeOut' }}
 							className="relative space-y-6">
-							<div className="from-[#9b87f5]/80 to-[#9b87f5]/60 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br text-white shadow-lg">
+							<div className="from-[#9b87f5]/80 to-[#9b87f5]/60 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-linear-to-bg text-white shadow-lg">
 								<Zap className="h-6 w-6" />
 							</div>
 
@@ -182,7 +182,7 @@ export default function AboutMe() {
 							animate={aboutInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
 							transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' }}
 							className="relative space-y-6">
-							<div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500/80 to-blue-500/60 text-white shadow-lg">
+							<div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-linear-to-bg from-blue-500/80 to-blue-500/60 text-white shadow-lg">
 								<LineChart className="h-6 w-6" />
 							</div>
 
@@ -200,7 +200,7 @@ export default function AboutMe() {
 						animate={aboutInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
 						transition={{ duration: 0.7, delay: 0.5, ease: 'easeOut' }}
 						className="mt-16 flex items-start gap-4">
-						<div className="from-[#9b87f5]/20 to-[#9b87f5]/5 text-[#9b87f5] inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br">
+						<div className="from-[#9b87f5]/20 to-[#9b87f5]/5 text-[#9b87f5] inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-linear-to-bg">
 							<Building className="h-5 w-5" />
 						</div>
 						<p className="text-muted-foreground text-base leading-relaxed">
@@ -225,37 +225,43 @@ export default function AboutMe() {
 								year: 'Jul 2020',
 								title: 'Webmaster',
 								company: 'Pixolon Digital',
-								description: 'Built and maintained company websites, implemented content updates, improved site performance and SEO, and established monitoring and backups to keep sites reliable.',
+								description:
+									'Built and maintained company websites, implemented content updates, improved site performance and SEO, and established monitoring and backups to keep sites reliable.',
 							},
 							{
 								year: 'Jul 2021',
 								title: 'Trainee Software Developer',
 								company: 'Amber Innovation (My Amber Group)',
-								description: 'Supported the engineering team by implementing features, fixing bugs, and writing tests; contributed to deployments and automation that helped scale services to 20+ countries.',
+								description:
+									'Supported the engineering team by implementing features, fixing bugs, and writing tests; contributed to deployments and automation that helped scale services to 20+ countries.',
 							},
 							{
 								year: 'Feb 2023',
 								title: 'Software Developer',
 								company: 'Amber Innovation (My Amber Group)',
-								description: 'Owned end-to-end features and integrations, improved system reliability and performance, and collaborated on product architecture—contributing to recognized, production-ready solutions.',
+								description:
+									'Owned end-to-end features and integrations, improved system reliability and performance, and collaborated on product architecture—contributing to recognized, production-ready solutions.',
 							},
 							{
 								year: 'Feb 2024',
 								title: 'Software Developer',
 								company: 'ThinkNChange',
-								description: 'Delivered new product features and service integrations, worked with stakeholders to define requirements, and helped launch offerings targeted to evolving market needs.',
+								description:
+									'Delivered new product features and service integrations, worked with stakeholders to define requirements, and helped launch offerings targeted to evolving market needs.',
 							},
 							{
 								year: 'Jun 2024',
 								title: 'Software Developer Technical Lead',
 								company: 'ThinkNChange',
-								description: 'Led a small engineering team: mentored developers, drove architecture and delivery decisions, introduced CI/CD and best practices, and guided successful launches of core services.',
+								description:
+									'Led a small engineering team: mentored developers, drove architecture and delivery decisions, introduced CI/CD and best practices, and guided successful launches of core services.',
 							},
 							{
 								year: 'Nov 2024 - Present',
 								title: 'FullStack Software Developer',
 								company: 'Freelance',
-								description: 'Designs and delivers end-to-end web and mobile applications for Jamaican businesses—handling requirements, development, deployment, and ongoing maintenance to improve client outcomes.',
+								description:
+									'Designs and delivers end-to-end web and mobile applications for Jamaican businesses—handling requirements, development, deployment, and ongoing maintenance to improve client outcomes.',
 							},
 						].map((item, index) => (
 							<motion.div

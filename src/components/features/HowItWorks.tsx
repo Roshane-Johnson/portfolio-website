@@ -7,7 +7,7 @@ export default function HowItWorks() {
 						<div className="p-8 md:p-12 lg:p-16">
 							<div className="mb-6 inline-block rounded-full border border-[#9b87f5]/30 bg-[#9b87f5]/20 px-4 py-1 text-[#9b87f5]">TAKE ACTION NOW</div>
 							<h2 className="mb-6 text-3xl font-bold tracking-tight text-white md:text-4xl lg:text-5xl">
-								From Your Vision to <span className="bg-gradient-to-r from-[#9b87f5] to-[#7a63f4] bg-clip-text text-transparent">High-Performing</span> Reality
+								From Your Vision to <span className="bg-linear-to-r from-[#9b87f5] to-[#7a63f4] bg-clip-text text-transparent">High-Performing</span> Reality
 							</h2>
 							<p className="text-muted-foreground mb-8 text-lg">
 								96% of digital projects fail to meet business objectives due to misaligned development, unclear processes, or poor implementation. My structured development methodology
@@ -84,7 +84,7 @@ export default function HowItWorks() {
 							</div>
 						</div>
 
-						<div className="relative flex flex-col justify-center overflow-hidden bg-gradient-to-br from-[#9b87f5] to-[#7a63f4] p-8 text-white md:p-12 lg:p-16">
+						<div className="relative flex flex-col justify-center overflow-hidden bg-linear-to-bg from-[#9b87f5] to-[#7a63f4] p-8 text-white md:p-12 lg:p-16">
 							<div className="absolute top-0 right-0 h-full w-full opacity-10"></div>
 							<div className="relative z-10">
 								<h3 className="mb-6 text-2xl font-bold tracking-tight md:text-3xl">My Structured Development Framework</h3>
