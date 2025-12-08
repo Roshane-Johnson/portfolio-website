@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
 				<motion.div className="relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}>
 					<Earth baseColor={[0.608, 0.529, 0.961]} markerColor={[0.608, 0.529, 0.961]} glowColor={[0.608, 0.529, 0.961]} />
 					<div className="w-[90vw] absolute top-[35%] left-1/2 -translate-x-1/2 z-10 mx-auto overflow-hidden rounded-lg shadow-[0_0_50px_rgba(155,135,245,0.2)] mt-4">
-						<Image src="hero.png" alt="Lunexa Dashboard" width={1920} height={1080} className="h-full w-full rounded-lg border border-white/10" />
+						<Image src="/hero.png" alt="Lunexa Dashboard" width={1920} height={1080} className="h-full w-full rounded-lg border border-white/10" />
 					</div>
 				</motion.div>
 			</div>

@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
 	output: 'export',
 	images: {
-		remotePatterns: [new URL('https://i.postimg.cc/**')],
+		unoptimized: true,
 	},
 	eslint: {
 		ignoreDuringBuilds: true,
