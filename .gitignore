@@ -14,8 +14,11 @@
 /coverage
 
 # next.js
-/.next/
-/out/
+/.next
+/out
+
+# firebase hosting
+.firebase/*
 
 # production
 /build
