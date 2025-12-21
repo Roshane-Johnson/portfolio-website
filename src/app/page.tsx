@@ -14,14 +14,12 @@ export default function Home() {
 			style={{
 				background: 'linear-gradient(135deg, #0a0613 0%, #150d27 100%)',
 			}}>
-			<Navbar />
 			<Hero />
 			<Services />
 			<Companies />
 			<AboutMe />
 			<HowItWorks />
 			<Contact />
-			<Footer />
 		</div>
 	)
 }
