@@ -1,9 +1,9 @@
 'use client'
 
 import { Marquee, MarqueeContent, MarqueeFade, MarqueeItem } from '@/components/ui/marquee'
+import Image from 'next/image'
 import { useState } from 'react'
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
-import Image from 'next/image'
 
 const Companies: React.FC = () => {
 	const [companyImages, _] = useState([
@@ -33,8 +33,8 @@ const Companies: React.FC = () => {
 						{companyImages.map((image, index) => (
 							<Tooltip key={index}>
 								<TooltipTrigger asChild>
-									<MarqueeItem className=" grayscale hover:grayscale-0 h-20 w-20 flex items-center justify-center" key={index}>
-										<Image src={image.src} alt={image.altText} className="overflow-hidden" />
+									<MarqueeItem className="relative grayscale hover:grayscale-0 h-20 w-20 flex items-center justify-center" key={index}>
+										<Image fill style={{ objectFit: 'contain' }} src={image.src} alt={image.altText} className="overflow-hidden" />
 									</MarqueeItem>
 								</TooltipTrigger>
 								<TooltipContent>
