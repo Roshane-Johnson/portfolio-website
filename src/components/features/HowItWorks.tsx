@@ -84,7 +84,7 @@ export default function HowItWorks() {
 							</div>
 						</div>
 
-						<div className="relative flex flex-col justify-center overflow-hidden bg-linear-to-bg from-[#9b87f5] to-[#7a63f4] p-8 text-white md:p-12 lg:p-16">
+						<div className="relative flex flex-col justify-center overflow-hidden bg-linear-to-br from-[#9b87f5] to-[#7a63f4] p-8 text-white md:p-12 lg:p-16">
 							<div className="absolute top-0 right-0 h-full w-full opacity-10"></div>
 							<div className="relative z-10">
 								<h3 className="mb-6 text-2xl font-bold tracking-tight md:text-3xl">My Structured Development Framework</h3>

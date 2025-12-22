@@ -31,10 +31,11 @@ const StatItem = ({ value, label, icon, delay = 0, decimalPlaces = 0, color = 'f
 			animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
 			transition={{ duration: 0.6, delay: delay, ease: 'easeOut' }}
 			className={cn('group border-border/30 bg-card relative overflow-hidden rounded-xl border p-6', resolvedTheme === 'dark' ? 'shadow-xl shadow-black/5' : 'shadow-lg shadow-black/3')}>
-			<div className={cn('absolute -top-6 -right-6 h-24 w-24 rounded-full bg-linear-to-bg opacity-20 blur-2xl transition-all duration-500 group-hover:opacity-30 group-hover:blur-3xl', color)} />
+			<div
+				className={cn('absolute -top-6 -right-6 h-24 w-24 rounded-full bg-linear-to-br opacity-20 blur-2xl transition-all duration-500 group-hover:opacity-30 group-hover:blur-3xl', color)}></div>
 
 			<div className="flex items-center gap-4">
-				<div className={cn('flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-linear-to-bg text-white', color)}>{icon}</div>
+				<div className={cn('flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-linear-to-br text-white', color)}>{icon}</div>
 
 				<div className="flex flex-col">
 					<h3 className="flex items-baseline text-3xl font-bold tracking-tight">
@@ -165,7 +166,7 @@ export default function AboutMe() {
 							animate={aboutInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
 							transition={{ duration: 0.7, delay: 0.1, ease: 'easeOut' }}
 							className="relative space-y-6">
-							<div className="from-[#9b87f5]/80 to-[#9b87f5]/60 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-linear-to-bg text-white shadow-lg">
+							<div className="from-[#9b87f5]/80 to-[#9b87f5]/60 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-linear-to-br text-white shadow-lg">
 								<Zap className="h-6 w-6" />
 							</div>
 
@@ -182,7 +183,7 @@ export default function AboutMe() {
 							animate={aboutInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
 							transition={{ duration: 0.7, delay: 0.3, ease: 'easeOut' }}
 							className="relative space-y-6">
-							<div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-linear-to-bg from-blue-500/80 to-blue-500/60 text-white shadow-lg">
+							<div className="inline-flex h-14 w-14 items-center justify-center rounded-xl bg-linear-to-br from-blue-500/80 to-blue-500/60 text-white shadow-lg">
 								<LineChart className="h-6 w-6" />
 							</div>
 
@@ -200,7 +201,7 @@ export default function AboutMe() {
 						animate={aboutInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
 						transition={{ duration: 0.7, delay: 0.5, ease: 'easeOut' }}
 						className="mt-16 flex items-start gap-4">
-						<div className="from-[#9b87f5]/20 to-[#9b87f5]/5 text-[#9b87f5] inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-linear-to-bg">
+						<div className="from-[#9b87f5]/20 to-[#9b87f5]/5 text-[#9b87f5] inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-linear-to-br">
 							<Building className="h-5 w-5" />
 						</div>
 						<p className="text-muted-foreground text-base leading-relaxed">
