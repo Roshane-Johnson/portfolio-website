@@ -64,10 +64,10 @@ interface Stats {
 export default function AboutMe() {
 	const aboutRef = useRef(null)
 	const statsRef = useRef(null)
-	const timelineRef = useRef(null)
+	// const timelineRef = useRef(null)
 
 	const aboutInView = useInView(aboutRef, { once: true, amount: 0.3 })
-	const timelineInView = useInView(timelineRef, { once: true, amount: 0.2 })
+	// const timelineInView = useInView(timelineRef, { once: true, amount: 0.2 })
 
 	const stats: Stats[] = [
 		{
@@ -110,7 +110,7 @@ export default function AboutMe() {
 	]
 
 	return (
-		<section className="relative w-full overflow-hidden pt-5 pb-16 md:py-24">
+		<section className="relative w-full overflow-hidden pt-5 md:pt-24">
 			{/* Background pattern */}
 			<div className="absolute inset-0 -z-10 opacity-[0.02] dark:opacity-[0.05]">
 				<svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg">
@@ -211,7 +211,7 @@ export default function AboutMe() {
 				</div>
 
 				{/* Timeline Section */}
-				<div ref={timelineRef} className="relative mx-auto max-w-4xl">
+				{/* <div ref={timelineRef} className="relative mx-auto max-w-4xl">
 					<motion.h2
 						initial={{ opacity: 0, y: 20 }}
 						animate={timelineInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -289,7 +289,7 @@ export default function AboutMe() {
 							</motion.div>
 						))}
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	)
