@@ -1,14 +1,14 @@
 'use client'
 
-import { useState, useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
 import { Button } from '@/components/ui/button'
-import Earth from '@/components/ui/globe'
-import { SparklesCore } from '@/components/ui/sparkles'
+import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { Check, Loader2 } from 'lucide-react'
+import { SparklesCore } from '@/components/ui/sparkles'
+import { Textarea } from '@/components/ui/textarea'
+import { motion, useInView } from 'framer-motion'
+import { Check, Github, Linkedin, Loader2, Mail, MapPin, Phone, Twitter } from 'lucide-react'
+import Link from 'next/link'
+import { useRef, useState } from 'react'
 
 export default function Contact() {
 	const [name, setName] = useState('')
@@ -119,20 +119,71 @@ export default function Contact() {
 							</motion.form>
 						</div>
 
-						<motion.div
-							initial={{ opacity: 0, x: 20 }}
-							animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
-							transition={{ duration: 0.5, delay: 0.5 }}
-							className="relative my-8 flex items-center justify-center overflow-hidden pr-8">
-							<div className="flex flex-col items-center justify-center overflow-hidden">
-								<article className="relative mx-auto h-[350px] min-h-60 max-w-[450px] overflow-hidden rounded-3xl border bg-linear-to-b from-[#9b87f5] to-[#9b87f5]/5 p-6 text-3xl tracking-tight text-white md:h-[450px] md:min-h-80 md:p-8 md:text-4xl md:leading-[1.05] lg:text-5xl">
-									Building Winning Brands Globally From Jamaica.
-									<div className="absolute -right-20 -bottom-20 z-10 mx-auto flex h-full w-full max-w-[300px] items-center justify-center transition-all duration-700 hover:scale-105 md:-right-28 md:-bottom-28 md:max-w-[550px]">
-										<Earth scale={1.1} baseColor={[0.608, 0.529, 0.961]} markerColor={[0.608, 0.529, 0.961]} glowColor={[0.608, 0.529, 0.961]} />
-									</div>
-								</article>
+						<div className="mt-10 mb-5">
+							<h3 className="mb-10 text-2xl font-semibold text-slate-300">Connect with Me</h3>
+							<div className="mb-12 flex gap-8">
+								<Link
+									prefetch={false}
+									className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-600 shadow-inner shadow-gray-800 hover:shadow-md hover:shadow-slate-500 hover:transition hover:duration-300 hover:ease-in-out"
+									href="#">
+									<Mail className="h-5 w-5 text-white" />
+								</Link>
+								<div className="text-md text-slate-300">
+									<p>Email me at </p>
+									<p>roshane1johnson[at]gmail.com</p>
+								</div>
 							</div>
-						</motion.div>
+
+							<div className="mb-12 flex gap-8">
+								<Link
+									prefetch={false}
+									className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-600 shadow-inner shadow-gray-800 hover:shadow-md hover:shadow-slate-500 hover:transition hover:duration-300 hover:ease-in-out"
+									href="#">
+									<Phone className="h-5 w-5 text-white" />
+								</Link>
+								<div className="text-md text-slate-300">
+									<p>Call me at </p>
+									<p>+1 (876) 232-0468</p>
+								</div>
+							</div>
+
+							<div className="mb-12 flex gap-8">
+								<Link
+									prefetch={false}
+									className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-600 px-2 shadow-inner shadow-gray-800 hover:shadow-md hover:shadow-slate-500 hover:transition hover:duration-300 hover:ease-in-out"
+									href="#">
+									<MapPin className="h-5 w-5 text-white" />
+								</Link>
+								<div className="text-md text-slate-300">
+									<p>Location at </p>
+									<p>Hybrid (Jamaica), Remote (Globally)</p>
+								</div>
+							</div>
+
+							<div className="flex space-x-12 py-7">
+								<Link
+									prefetch={false}
+									className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-600 bg-gray-800 hover:shadow-md hover:shadow-slate-500 hover:transition hover:duration-300 hover:ease-in-out"
+									target="_blank"
+									href="https://twitter.com/kendrip_">
+									<Twitter className="h-5 w-5 text-white" />
+								</Link>
+								<Link
+									prefetch={false}
+									className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-gray-800 hover:shadow-md hover:shadow-slate-500 hover:transition hover:duration-300 hover:ease-in-out"
+									target="_blank"
+									href="#">
+									<Github className="h-5 w-5 text-white" />
+								</Link>
+								<Link
+									prefetch={false}
+									className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-600 bg-gray-800 hover:shadow-md hover:shadow-slate-500 hover:transition hover:duration-300 hover:ease-in-out"
+									target="_blank"
+									href="#">
+									<Linkedin className="h-5 w-5 text-white" />
+								</Link>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

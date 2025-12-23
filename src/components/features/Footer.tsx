@@ -11,7 +11,6 @@ const data = () => ({
 			{ name: 'Home', href: '/' },
 			{ name: 'Services', href: '#services' },
 			{ name: 'About', href: '#about' },
-			// { name: 'Projects', href: '#careers' },
 			{ name: 'Contact', href: '#contact' },
 		],
 		projects: [{ name: 'Linkedin AI Profile Analyzer (In Progress)', href: '#!profile-analyzer' }],
