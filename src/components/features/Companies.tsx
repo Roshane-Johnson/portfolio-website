@@ -27,8 +27,8 @@ const Companies: React.FC = () => {
 			</div>
 			<div className="flex size-full items-center justify-center bg-transparent">
 				<Marquee>
-					<MarqueeFade side="left" className="md:from-[#110a20] from-transparent" />
-					<MarqueeFade side="right" className="md:from-[#150d26]  from-transparent" />
+					<MarqueeFade side="left" className="md:from-[#0e091b] from-transparent" />
+					<MarqueeFade side="right" className="md:from-[#100a1f]  from-transparent" />
 					<MarqueeContent className="transition-all">
 						{companyImages.map((image, index) => (
 							<Tooltip key={index}>
