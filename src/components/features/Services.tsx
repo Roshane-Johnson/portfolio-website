@@ -32,8 +32,8 @@ export default function Services() {
 		},
 	}
 	return (
-		<section className="relative py-14 font-light">
-			<div className="mx-auto max-w-screen-xl px-4 md:px-8">
+		<section id="services" className="relative py-14 font-light">
+			<div className="mx-auto max-w-7xl px-4 md:px-8">
 				<div className="relative mx-auto max-w-2xl sm:text-center">
 					<div className="relative z-10">
 						<Badge variant="outline" className="border-[#9b87f5]/20 bg-[#9b87f5]/5 rounded-full px-4 py-1 text-sm font-medium">
@@ -61,7 +61,7 @@ export default function Services() {
 								className={cn(
 									'group border-[#9b87f5]/10 bg-transparent hover:border-[#9b87f5]/30 relative flex h-full cursor-pointer flex-col justify-between overflow-hidden rounded-xl border px-6 pt-6 pb-10 shadow-md transition-all duration-500'
 								)}>
-								<div className="absolute top-0 -right-1/2 z-0 size-full cursor-pointer bg-[linear-gradient(to_right,#31163d5e_1px,transparent_1px),linear-gradient(to_bottom,#31163d5e_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] bg-[size:24px_24px]"></div>
+								<div className="absolute top-0 -right-1/2 z-0 size-full cursor-pointer bg-[linear-gradient(to_right,#31163d5e_1px,transparent_1px),linear-gradient(to_bottom,#31163d5e_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] bg-size-[24px_24px]"></div>
 
 								<div className="text-[#9b87f5]/5 group-hover:text-[#9b87f5]/10 absolute right-1 bottom-3 scale-[6] transition-all duration-700 group-hover:scale-[6.2]">{item.icon}</div>
 

@@ -5,7 +5,6 @@ import Companies from '@/components/features/Companies'
 import AboutMe from '@/components/features/AboutMe'
 import Contact from '@/components/features/Contact'
 import HowItWorks from '@/components/features/HowItWorks'
-import Footer from '@/components/features/Footer'
 
 export default function Home() {
 	return (

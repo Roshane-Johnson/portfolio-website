@@ -1,6 +1,6 @@
 import Footer from '@/components/features/Footer'
-import Hero from '@/components/features/Hero'
 import Navbar from '@/components/features/Navbar'
+import { SmoothScroll } from '@/components/ui/smooth-scroll'
 import type { Metadata } from 'next'
 import { Geist_Mono, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
@@ -34,6 +34,7 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="bg-[#0a0613] dark">
 			<body className={` ${geistMono.variable} ${playfairDisplay.variable} ${geistSans.variable} antialiased`}>
+				<SmoothScroll offset={80} />
 				<Navbar />
 				{children}
 				<Footer />

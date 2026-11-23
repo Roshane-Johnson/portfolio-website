@@ -43,7 +43,7 @@ export default function Contact() {
 	}
 
 	return (
-		<section className="bg-transparent relative w-full overflow-hidden py-16 md:py-24">
+		<section id="contact" className="bg-transparent relative w-full overflow-hidden py-16 md:py-24">
 			<div
 				className="absolute right-0 bottom-0 h-[300px] w-[300px] rounded-full opacity-10 blur-[100px]"
 				style={{
@@ -53,7 +53,7 @@ export default function Contact() {
 
 			<div className="relative z-10 container mx-auto px-4 md:px-6">
 				<div className="border-border/40 bg-secondary/20 mx-auto max-w-5xl overflow-hidden rounded-[28px] border shadow-xl backdrop-blur-sm">
-					<div className="grid md:grid-cols-2">
+					<div className="grid md:grid-cols-[6fr_5fr]">
 						<div className="relative p-6 md:p-10" ref={formRef}>
 							<motion.div
 								initial={{ opacity: 0, y: 20 }}
@@ -119,18 +119,22 @@ export default function Contact() {
 							</motion.form>
 						</div>
 
-						<div className="mt-10 mb-5">
+						<div className="pl-6 mt-10 mb-5">
 							<h3 className="mb-10 text-2xl font-semibold text-slate-300">Connect with Me</h3>
 							<div className="mb-12 flex gap-8">
 								<Link
 									prefetch={false}
 									className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-600 shadow-inner shadow-gray-800 hover:shadow-md hover:shadow-slate-500 hover:transition hover:duration-300 hover:ease-in-out"
-									href="#">
+									href="mailto:roshane1johnson@gmail.com">
 									<Mail className="h-5 w-5 text-white" />
 								</Link>
 								<div className="text-md text-slate-300">
 									<p>Email me at </p>
-									<p>roshane1johnson[at]gmail.com</p>
+									<p>
+										<Link prefetch={false} href="mailto:roshane1johnson@gmail.com">
+											roshane1johnson[at]gmail.com
+										</Link>
+									</p>
 								</div>
 							</div>
 
@@ -138,12 +142,14 @@ export default function Contact() {
 								<Link
 									prefetch={false}
 									className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-600 shadow-inner shadow-gray-800 hover:shadow-md hover:shadow-slate-500 hover:transition hover:duration-300 hover:ease-in-out"
-									href="#">
+									href="tel:+18762320468">
 									<Phone className="h-5 w-5 text-white" />
 								</Link>
 								<div className="text-md text-slate-300">
 									<p>Call me at </p>
-									<p>+1 (876) 232-0468</p>
+									<p>
+										<a href="tel:+18762320468">+1 (876) 232-0468</a>
+									</p>
 								</div>
 							</div>
 
@@ -155,8 +161,8 @@ export default function Contact() {
 									<MapPin className="h-5 w-5 text-white" />
 								</Link>
 								<div className="text-md text-slate-300">
-									<p>Location at </p>
-									<p>Hybrid (Jamaica), Remote (Globally)</p>
+									<p>Location</p>
+									<p>Remote Globally & Hybrid for Local Teams</p>
 								</div>
 							</div>
 
@@ -172,14 +178,14 @@ export default function Contact() {
 									prefetch={false}
 									className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-gray-800 hover:shadow-md hover:shadow-slate-500 hover:transition hover:duration-300 hover:ease-in-out"
 									target="_blank"
-									href="#">
+									href="https://github.com/roshane-johnson">
 									<Github className="h-5 w-5 text-white" />
 								</Link>
 								<Link
 									prefetch={false}
 									className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-600 bg-gray-800 hover:shadow-md hover:shadow-slate-500 hover:transition hover:duration-300 hover:ease-in-out"
 									target="_blank"
-									href="#">
+									href="https://linkedin.com/in/roshane-johnson">
 									<Linkedin className="h-5 w-5 text-white" />
 								</Link>
 							</div>

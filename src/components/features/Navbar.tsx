@@ -11,10 +11,11 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
-	{ name: 'Home', href: '/' },
-	{ name: 'Services', href: '#services' },
-	{ name: 'About Me', href: '#about' },
-	// { name: 'Projects (In Progress)', href: '#projects' },
+	{ name: 'Home', href: '/#home' },
+	{ name: 'Services', href: '/#services' },
+	{ name: 'About Me', href: '/#about' },
+	// { name: 'Projects', href: '/projects' },
+	// { name: 'LinkedIn Profile Analyser', href: '/projects#profile-analyser' },
 	{ name: 'Contact', href: '#contact' },
 ]
 
@@ -101,6 +102,7 @@ export default function Navbar() {
 							{navItems.map((item) => (
 								<motion.div key={item.name} variants={itemVariants} className="relative" onMouseEnter={() => setHoveredItem(item.name)} onMouseLeave={() => setHoveredItem(null)}>
 									<Link
+										scroll={false} // to prevent the browser's default "jump" behavior, allowing your global handler to manage the smooth transition
 										prefetch={false}
 										href={item.href}
 										className="text-foreground/80 hover:text-foreground relative rounded-lg px-4 py-2 text-sm font-medium transition-colors duration-200">
@@ -168,6 +170,7 @@ export default function Navbar() {
 									{navItems.map((item) => (
 										<motion.div key={item.name} variants={mobileItemVariants}>
 											<Link
+												scroll={false} // to prevent the browser's default "jump" behavior, allowing your global handler to manage the smooth transition
 												prefetch={false}
 												href={item.href}
 												className="text-foreground hover:bg-muted block rounded-lg px-4 py-3 font-medium transition-colors duration-200"

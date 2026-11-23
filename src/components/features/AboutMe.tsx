@@ -110,7 +110,7 @@ export default function AboutMe() {
 	]
 
 	return (
-		<section className="relative w-full overflow-hidden pt-5 md:pt-24">
+		<section id="about" className="relative w-full overflow-hidden pt-5 md:pt-24">
 			{/* Background pattern */}
 			<div className="absolute inset-0 -z-10 opacity-[0.02] dark:opacity-[0.05]">
 				<svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg">

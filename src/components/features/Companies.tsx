@@ -14,7 +14,7 @@ const Companies: React.FC = () => {
 	])
 
 	return (
-		<div className="max-w-7xl mx-auto py-16">
+		<section className="max-w-7xl mx-auto py-16">
 			<div className="relative mx-auto max-w-2xl sm:text-center mb-10">
 				<div className="relative z-10">
 					<p className="mt-3 text-white/60 text-center">Technical Contribution Across Industry Leaders</p>
@@ -45,7 +45,7 @@ const Companies: React.FC = () => {
 					</MarqueeContent>
 				</Marquee>
 			</div>
-		</div>
+		</section>
 	)
 }
 

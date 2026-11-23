@@ -1,6 +1,6 @@
 export default function HowItWorks() {
 	return (
-		<section className="relative px-4 py-24 md:px-6">
+		<section id="how-it-works" className="relative px-4 py-24 md:px-6">
 			<div className="mx-auto max-w-7xl">
 				<div className="relative overflow-hidden rounded-2xl border border-[#9b87f5]/30 bg-[#9b87f5]/5 shadow-2xl transition-all duration-500 hover:border-[#9b87f5]/30 ">
 					<div className="relative z-10 grid gap-0 lg:grid-cols-2">
